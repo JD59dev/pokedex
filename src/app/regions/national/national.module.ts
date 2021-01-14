@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AllPageRoutingModule } from './all-routing.module';
+import { NationalPageRoutingModule } from './national-routing.module';
 
-import { AllPage } from './all.page';
+import { NationalPage } from './national.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AllPageRoutingModule
+    NationalPageRoutingModule
   ],
-  declarations: [AllPage]
+  declarations: [NationalPage]
 })
-export class AllPageModule {}
+export class NationalPageModule {}

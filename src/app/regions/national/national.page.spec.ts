@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { AllPage } from './all.page';
+import { NationalPage } from './national.page';
 
-describe('AllPage', () => {
-  let component: AllPage;
-  let fixture: ComponentFixture<AllPage>;
+describe('NationalPage', () => {
+  let component: NationalPage;
+  let fixture: ComponentFixture<NationalPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AllPage ],
+      declarations: [ NationalPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(AllPage);
+    fixture = TestBed.createComponent(NationalPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

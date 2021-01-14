@@ -2,6 +2,8 @@
 
 API : https://pokeapi.co/docs/v2
 
+Pour s'aider : https://github.com/katrose/pokedex-api
+
 # Side-menu
 
 - Il y aura tous les Pokédex régionaux (de Kanto à Galar)

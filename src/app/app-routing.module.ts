@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {
+  /* {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
+  }, */
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'tabs/all',
     pathMatch: 'full'
   },
   {
@@ -56,8 +56,8 @@ const routes: Routes = [
     loadChildren: () => import('./favorites/favorites.module').then( m => m.FavoritesPageModule)
   },
   {
-    path: 'all',
-    loadChildren: () => import('./regions/all/all.module').then( m => m.AllPageModule)
+    path: 'national',
+    loadChildren: () => import('./regions/national/national.module').then( m => m.NationalPageModule)
   },
 ];
 

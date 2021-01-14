@@ -1,9 +1,43 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>settings</ion-title>
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button color="danger"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Settings</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <form (ngSubmit)="save()">
+    <ion-list lines="full">
+      <!-- All form lines will take the screen's margin -->
 
+      <ion-item>
+        <ion-label position="floating">Nickname</ion-label>
+        <ion-input [(ngModel)]="settings.username" name="username"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Toggle Dark Mode</ion-label>
+        <ion-toggle (ionChange)="toggleDarkMode()" [(ngModel)]="settings.darkMode" name="darkMode"></ion-toggle>
+      </ion-item>
+    </ion-list>
+
+    <div class="ion-padding">
+      <ion-button expand="block" type="submit" [disabled]="saving">
+        Save
+        <ion-spinner name="circles" *ngIf="saving" class="ion-margin-start"></ion-spinner>
+      </ion-button>
+
+      <ion-text *ngIf="success" color="success">
+        Settings are saved
+      </ion-text>
+    </div>
+
+    <div class="ion-padding">
+      <ion-button color="danger" expand="block" (click)="removeData()">
+        Delete
+      </ion-button>
+    </div>
+  </form>
 </ion-content>
