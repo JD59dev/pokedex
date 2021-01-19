@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { KalosPageRoutingModule } from './kalos-routing.module';
+import { GalarTundraPageRoutingModule } from './galar-tundra-routing.module';
 
-import { KalosPage } from './kalos.page';
+import { GalarTundraPage } from './galar-tundra.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    KalosPageRoutingModule
+    GalarTundraPageRoutingModule
   ],
-  declarations: [KalosPage]
+  declarations: [GalarTundraPage]
 })
-export class KalosPageModule {}
+export class GalarTundraPageModule {}

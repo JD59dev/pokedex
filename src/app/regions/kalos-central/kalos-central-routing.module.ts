@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { KalosPage } from './kalos.page';
+import { KalosCentralPage } from './kalos-central.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: KalosPage
+    component: KalosCentralPage
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class KalosPageRoutingModule {}
+export class KalosCentralPageRoutingModule {}

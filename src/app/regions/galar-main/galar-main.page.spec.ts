@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { GalarPage } from './galar.page';
+import { GalarMainPage } from './galar-main.page';
 
-describe('GalarPage', () => {
-  let component: GalarPage;
-  let fixture: ComponentFixture<GalarPage>;
+describe('GalarMainPage', () => {
+  let component: GalarMainPage;
+  let fixture: ComponentFixture<GalarMainPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GalarPage ],
+      declarations: [ GalarMainPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(GalarPage);
+    fixture = TestBed.createComponent(GalarMainPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

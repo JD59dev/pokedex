@@ -8,8 +8,12 @@ const routes: Routes = [
   }, */
   {
     path: '',
-    redirectTo: 'tabs/all',
+    redirectTo: 'tabs/national',
     pathMatch: 'full'
+  },
+  {
+    path: 'kanto',
+    loadChildren: () => import('./regions/kanto/kanto.module').then(m => m.KantoPageModule)
   },
   {
     path: 'johto',
@@ -28,16 +32,20 @@ const routes: Routes = [
     loadChildren: () => import('./regions/unova/unova.module').then( m => m.UnovaPageModule)
   },
   {
-    path: 'kalos',
-    loadChildren: () => import('./regions/kalos/kalos.module').then( m => m.KalosPageModule)
+    path: 'kalos-central',
+    loadChildren: () => import('./regions/kalos-central/kalos-central.module').then( m => m.KalosCentralPageModule)
+  },
+  {
+    path: 'kalos-coastal',
+    loadChildren: () => import('./regions/kalos-coastal/kalos-coastal.module').then( m => m.KalosCoastalPageModule)
+  },
+  {
+    path: 'kalos-mountain',
+    loadChildren: () => import('./regions/kalos-mountain/kalos-mountain.module').then( m => m.KalosMountainPageModule)
   },
   {
     path: 'alola',
     loadChildren: () => import('./regions/alola/alola.module').then( m => m.AlolaPageModule)
-  },
-  {
-    path: 'galar',
-    loadChildren: () => import('./regions/galar/galar.module').then( m => m.GalarPageModule)
   },
   {
     path: 'tabs',
@@ -58,6 +66,18 @@ const routes: Routes = [
   {
     path: 'national',
     loadChildren: () => import('./regions/national/national.module').then( m => m.NationalPageModule)
+  },
+  {
+    path: 'galar-main',
+    loadChildren: () => import('./regions/galar-main/galar-main.module').then( m => m.GalarMainPageModule)
+  },
+  {
+    path: 'galar-isle',
+    loadChildren: () => import('./regions/galar-isle/galar-isle.module').then( m => m.GalarIslePageModule)
+  },
+  {
+    path: 'galar-tundra',
+    loadChildren: () => import('./regions/galar-tundra/galar-tundra.module').then( m => m.GalarTundraPageModule)
   },
 ];
 

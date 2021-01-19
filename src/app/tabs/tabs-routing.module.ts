@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { SettingsPageModule } from '../settings/settings.module';
 
 import { TabsPage } from './tabs.page';
 
@@ -20,7 +19,7 @@ const routes: Routes = [
       },
       {
         path: 'settings',
-        loadChildren: () => import('../settings/settings.module').then( m => SettingsPageModule)
+        loadChildren: () => import('../settings/settings.module').then( m => m.SettingsPageModule)
       }
     ]
   }
