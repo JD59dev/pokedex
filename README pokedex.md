@@ -6,17 +6,17 @@ Pour s'aider : https://github.com/katrose/pokedex-api
 
 # Side-menu
 
-- Il y aura tous les Pokédex régionaux (de Kanto à Galar)
+- Il y aura tous les Pokédex régionaux (de Kanto à Galar) DONE
 
-- Le Pokédex National s'affichera par défaut
+- Le Pokédex National s'affichera par défaut DONE
 
 # Header
 
-- Titre du Pokédex selon la région choisie
+- Titre du Pokédex selon la région choisie -> DONE
 
 - Mettre une barre de recherche (insérer une icône et afficher la barre au clic)
 
-- Icône de side-menu (voir ionapp)
+- Icône de side-menu (voir ionapp) -> ON HOLD (icônes custom ?)
 
 # Tabs
 
@@ -25,6 +25,8 @@ Pour s'aider : https://github.com/katrose/pokedex-api
 - Settings (dark mode, langage (anglais par défaut))
 
 - Pokémons favoris : une liste regropant tous les Pokémons choisis par l'utilisateur
+
+- Les tabs doivent s'afficher sur TOUTES LES PAGES
 
 # Détails
 
