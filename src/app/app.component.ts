@@ -11,6 +11,8 @@ import { Storage } from '@ionic/storage';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
+  public items: any = [];
+
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
@@ -19,8 +21,11 @@ export class AppComponent {
     private storage: Storage
   ) {
     this.initializeApp();
+    this.items = [
+      { expanded: false }
+    ];
   }
-
+  
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
@@ -35,8 +40,22 @@ export class AppComponent {
     });
   }
 
-  // Close the menu
   closeMenu() {
     this.menu.close();
+  }
+
+  expandItem(item): void {
+    if (item.expanded) {
+      item.expanded = false;
+    } else {
+      this.items.map(listItem => {
+        if (item == listItem) {
+          listItem.expanded = !listItem.expanded;
+        } else {
+          listItem.expanded = false;
+        }
+        return listItem;
+      });
+    }
   }
 }

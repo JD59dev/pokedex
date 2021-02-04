@@ -8,7 +8,7 @@ const routes: Routes = [
   }, */
   {
     path: '',
-    redirectTo: 'tabs/national',
+    redirectTo: 'national',
     pathMatch: 'full'
   },
   {
@@ -46,10 +46,6 @@ const routes: Routes = [
   {
     path: 'alola',
     loadChildren: () => import('./regions/alola/alola.module').then( m => m.AlolaPageModule)
-  },
-  {
-    path: 'tabs',
-    loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
   },
   {
     path: 'settings',

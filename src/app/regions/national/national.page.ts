@@ -13,7 +13,7 @@ export class NationalPage implements OnInit {
 
   constructor(
     private pkmn: PkmnService,
-    private router: Router
+    private router: Router,
   ) { }
 
   ngOnInit() {

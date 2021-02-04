@@ -59,11 +59,4 @@ export class PkmnService {
   getGalarTundraDex() {
     return this.http.get('https://pokeapi.co/api/v2/pokedex/29').toPromise();
   } // Crown Tundra PokéDex, only available in DLC
-
-  
-
-  /**
-   * TODO: - Faire les requêtes des pokédex régionaux et national : https://pokeapi.co/api/v2/pokedex/entre 3 et 9
-   * - Requête des sprites en liste : https://pokeapi.co/api/v2/pokemon/ -> pokemon.sprites.versions.generation-vii.icons.front_default
-   */
 }

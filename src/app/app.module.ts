@@ -10,9 +10,11 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { IonicStorageModule } from '@ionic/storage';
 import { HttpClientModule } from '@angular/common/http';
+import { ExpandableComponent } from './components/expandable/expandable.component';
+
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ExpandableComponent],
   entryComponents: [],
   imports: [BrowserModule, 
     IonicModule.forRoot(),
