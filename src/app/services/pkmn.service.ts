@@ -59,4 +59,6 @@ export class PkmnService {
   getGalarTundraDex() {
     return this.http.get('https://pokeapi.co/api/v2/pokedex/29').toPromise();
   } // Crown Tundra PokéDex, only available in DLC
+
+  
 }

@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { LanguageService } from './language.service';
+import { PkmnDetailsService } from './pkmn-details.service';
 
-describe('LanguageService', () => {
-  let service: LanguageService;
+describe('PkmnDetailsService', () => {
+  let service: PkmnDetailsService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(LanguageService);
+    service = TestBed.inject(PkmnDetailsService);
   });
 
   it('should be created', () => {

@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Storage } from '@ionic/storage';
 
-import { LanguageService } from '../services/language.service';
-
 @Component({
   selector: 'app-settings',
   templateUrl: './settings.page.html',
@@ -24,7 +22,6 @@ export class SettingsPage implements OnInit {
 
   constructor(
     private storage: Storage,
-    private language: LanguageService,
 ) { }
 
   ngOnInit() {

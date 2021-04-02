@@ -12,7 +12,7 @@ export class NationalPage implements OnInit {
   skeletons = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 
   constructor(
-    private pkmn: PkmnService,
+    private pkmnService: PkmnService,
     private router: Router,
   ) { }
 
@@ -22,7 +22,7 @@ export class NationalPage implements OnInit {
   ionViewWillEnter() {
     this.pokemons = [];
 
-    this.pkmn.getNationalDex().then(pokemons => {
+    this.pkmnService.getNationalDex().then(pokemons => {
       setTimeout(() => this.pokemons = pokemons['pokemon_entries'], 1000);
     });
   }

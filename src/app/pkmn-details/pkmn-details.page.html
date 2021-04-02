@@ -1,9 +1,17 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>pkmn-details</ion-title>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button color="danger"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+        <ion-back-button>Back</ion-back-button>
+    </ion-buttons>
+    <div class="ion-text-capitalize">
+      <ion-title>{{ pokemon.pokemon_species.name }}</ion-title>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  
 </ion-content>
